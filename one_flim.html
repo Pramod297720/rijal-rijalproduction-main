@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/png" href="assets/img/movie logo.png" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>One - Upcoming Feature Film | R&R Production</title>
+    <meta name="description" content="One is an upcoming Nepali feature film from Rijal & Rijal Production, produced by Laxman Rijal and directed by Yuvraj Waiba." />
+    <meta name="keywords" content="One movie, Nepali film, Laxman Rijal, Yuvraj Waiba, Rijal and Rijal Production, Nepali cinema, upcoming Nepali movie" />
+    <meta name="author" content="R&R Production" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rijalandrijalproduction.com/one_flim.html" />
+    <meta property="og:title" content="One - Upcoming Feature Film | R&R Production" />
+    <meta property="og:description" content="One - An upcoming Nepali feature film from Rijal & Rijal Production, produced by Laxman Rijal and directed by Yuvraj Waiba." />
+    <meta property="og:image" content="assets/img/One/ONE_TITLE POSTER_FINAL.jpg.jpeg" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <style>
+        :root {
+            --primary-gold: #D4AF37;
+            --secondary-gold: #FFD700;
+            --accent-gold: #B8860B;
+            --dark-bg: #0a0a0a;
+            --card-bg: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #cccccc;
+            --text-muted: #888888;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%);
+            color: var(--text-primary);
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        .hero-header {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/img/kaji/1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+
+        .hero-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, var(--primary-gold) 0%, transparent 50%, var(--secondary-gold) 100%);
+            opacity: 0.1;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { opacity: 0.1; }
+            50% { opacity: 0.2; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .movie-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            animation: titleGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes titleGlow {
+            from { text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 0 0 20px var(--primary-gold); }
+            to { text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 0 0 30px var(--secondary-gold); }
+        }
+
+        .movie-subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: var(--secondary-gold);
+            margin-bottom: 2rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .release-date {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            padding: 1rem 2rem;
+            border: 1px solid var(--primary-gold);
+            border-radius: 50px;
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Navigation Breadcrumb */
+        .breadcrumb-nav {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+
+        .breadcrumb-custom {
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            border: 1px solid var(--primary-gold);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .breadcrumb-custom a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb-custom a:hover {
+            color: var(--secondary-gold);
+        }
+
+        .breadcrumb-custom .current {
+            color: var(--secondary-gold);
+            font-weight: 600;
+        }
+
+        /* Section Styles */
+        .section-custom {
+            padding: 5rem 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-gold);
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-gold), var(--secondary-gold));
+            border-radius: 2px;
+        }
+
+        /* Card Styles */
+        .gold-card {
+            background: linear-gradient(135deg, var(--card-bg) 0%, rgba(212, 175, 55, 0.15) 100%);
+            border: 2px solid var(--primary-gold);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+        }
+
+        .gold-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+            opacity: 0.15;
+            transition: left 0.6s ease;
+        }
+
+        .gold-card:hover::before {
+            left: 100%;
+        }
+
+        .gold-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(212, 175, 55, 0.4);
+            border-color: var(--secondary-gold);
+        }
+
+        .gold-card ul li {
+            color: var(--text-primary) !important;
+            font-weight: 500;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .gold-card ul li:hover {
+            color: var(--secondary-gold) !important;
+            transform: translateX(10px);
+        }
+
+        .gold-card ul li strong {
+            color: var(--secondary-gold) !important;
+            font-weight: 700;
+        }
+
+        /* Cast & Crew Styles */
+        .cast-member {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(212, 175, 55, 0.15) 100%);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            border-radius: 20px;
+            transition: all 0.4s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
+        }
+
+        .cast-member::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, var(--primary-gold) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .cast-member:hover::before {
+            opacity: 0.1;
+        }
+
+        .cast-member:hover {
+            transform: translateY(-15px) scale(1.05);
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0.25) 100%);
+            border-color: var(--primary-gold);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.3);
+        }
+
+        .cast-member i {
+            font-size: 3.5rem;
+            color: var(--primary-gold);
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .cast-member:hover i {
+            transform: scale(1.2) rotate(10deg);
+            color: var(--secondary-gold);
+        }
+
+        .cast-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            border: 3px solid var(--primary-gold);
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+        }
+
+        .cast-member:hover .cast-photo {
+            transform: scale(1.1);
+            border-color: var(--secondary-gold);
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.5);
+        }
+
+        .cast-member h5 {
+            font-weight: 700;
+            color: #000000 !important;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            text-shadow: none;
+        }
+
+        .cast-member small {
+            color: #000000 !important;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* Media Items */
+        .media-item-custom {
+            text-align: center;
+            padding: 2.5rem;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(212, 175, 55, 0.15) 100%);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            border-radius: 20px;
+            transition: all 0.4s ease;
+            height: 100%;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
+        }
+
+        .media-item-custom::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, var(--primary-gold) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .media-item-custom:hover::before {
+            opacity: 0.1;
+        }
+
+        .media-item-custom:hover {
+            transform: translateY(-15px) scale(1.05);
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0.25) 100%);
+            border-color: var(--primary-gold);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.3);
+        }
+
+        .media-item-custom i {
+            font-size: 3.5rem;
+            color: var(--primary-gold);
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .media-item-custom:hover i {
+            transform: scale(1.2) rotate(10deg);
+            color: var(--secondary-gold);
+        }
+
+        .media-item-custom h5 {
+            font-weight: 700;
+            color: var(--text-primary) !important;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+        }
+
+        .media-item-custom p {
+            color: var(--text-secondary) !important;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Info Box Styles */
+        .info-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(212, 175, 55, 0.15) 100%);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+        }
+
+        .info-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+            opacity: 0.1;
+            transition: left 0.6s ease;
+        }
+
+        .info-box:hover::before {
+            left: 100%;
+        }
+
+        .info-box:hover {
+            transform: translateY(-5px) scale(1.02);
+            border-color: var(--primary-gold);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.25);
+        }
+
+        .info-box h4 {
+            color: var(--primary-gold);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-box ul li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            color: var(--text-primary) !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .info-box ul li:last-child {
+            border-bottom: none;
+        }
+
+        .info-box ul li:hover {
+            color: var(--secondary-gold) !important;
+            transform: translateX(10px);
+        }
+
+        .info-box ul li strong {
+            color: var(--secondary-gold) !important;
+            font-weight: 700;
+        }
+
+        /* Floating Animation */
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .movie-title {
+                font-size: 3rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .gold-card {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--dark-bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-gold);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary-gold);
+        }
+
+        /* Scroll Indicator Styles */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .mouse {
+            width: 25px;
+            height: 40px;
+            border: 2px solid var(--primary-gold);
+            border-radius: 25px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding: 5px 0;
+        }
+
+        .wheel {
+            width: 4px;
+            height: 8px;
+            background: var(--primary-gold);
+            border-radius: 2px;
+            animation: scroll-wheel 2s infinite;
+        }
+
+        @keyframes scroll-wheel {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(15px);
+                opacity: 0;
+            }
+        }
+
+        .arrow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .arrow span {
+            width: 2px;
+            height: 6px;
+            background: var(--primary-gold);
+            border-radius: 1px;
+            animation: scroll-arrow 2s infinite;
+        }
+
+        .arrow span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .arrow span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .arrow span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes scroll-arrow {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(10px);
+                opacity: 0;
+            }
+        }
+
+        /* Hero Social Links */
+        .social-links-hero {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .facebook-link {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #1877f2 0%, #0d5fd8 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(24, 119, 242, 0.3);
+            border: 2px solid transparent;
+        }
+
+        .facebook-link:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, #0d5fd8 0%, #0a4fb8 100%);
+            box-shadow: 0 15px 35px rgba(24, 119, 242, 0.4);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .facebook-link i {
+            font-size: 1.3rem;
+            transition: transform 0.3s ease;
+        }
+
+        .facebook-link:hover i {
+            transform: scale(1.1);
+        }
+
+        .facebook-link span {
+            transition: all 0.3s ease;
+        }
+
+        /* One film detail layout */
+        .one-film-main {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .film-hero {
+            min-height: 100vh;
+            padding: 150px 0 90px;
+            background:
+                linear-gradient(90deg, rgba(5, 5, 5, 0.96) 0%, rgba(5, 5, 5, 0.84) 42%, rgba(5, 5, 5, 0.58) 100%),
+                url('assets/img/One/ONE_TITLE POSTER_FINAL.jpg.jpeg') center/cover;
+            display: flex;
+            align-items: center;
+        }
+
+        .film-hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 78% 45%, rgba(212, 175, 55, 0.2), transparent 35%);
+            pointer-events: none;
+        }
+
+        .film-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .film-poster-wrap {
+            position: relative;
+            max-width: 430px;
+            margin: 0 auto;
+            animation: posterFloat 6s ease-in-out infinite;
+        }
+
+        .film-poster-wrap::before {
+            content: '';
+            position: absolute;
+            inset: 18px -14px -18px 14px;
+            border: 1px solid rgba(255, 215, 0, 0.45);
+            border-radius: 18px;
+            transform: rotate(3deg);
+            z-index: -1;
+        }
+
+        .film-poster {
+            display: block;
+            width: 100%;
+            aspect-ratio: 0.69;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 215, 0, 0.7);
+            box-shadow: 0 28px 70px rgba(0, 0, 0, 0.65);
+        }
+
+        @keyframes posterFloat {
+            0%, 100% { transform: translateY(0) rotate(-1deg); }
+            50% { transform: translateY(-12px) rotate(1deg); }
+        }
+
+        .film-kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--secondary-gold);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .film-kicker::before {
+            content: '';
+            width: 38px;
+            height: 2px;
+            background: var(--secondary-gold);
+        }
+
+        .film-hero-copy h1 {
+            font-size: clamp(3.8rem, 9vw, 7.5rem);
+            line-height: 0.95;
+            margin-bottom: 1.5rem;
+            color: #fff;
+            letter-spacing: -0.04em;
+        }
+
+        .film-hero-copy h1 span {
+            display: block;
+            color: var(--secondary-gold);
+            font-size: 0.34em;
+            letter-spacing: 0.3em;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+
+        .film-hero-copy .lead {
+            max-width: 560px;
+            color: rgba(255, 255, 255, 0.78);
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            line-height: 1.8;
+        }
+
+        .film-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 2rem 0;
+        }
+
+        .film-meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 15px;
+            border: 1px solid rgba(212, 175, 55, 0.55);
+            border-radius: 999px;
+            color: #fff;
+            background: rgba(212, 175, 55, 0.09);
+            font-size: 0.85rem;
+        }
+
+        .film-meta i {
+            color: var(--secondary-gold);
+        }
+
+        .film-section {
+            padding: 95px 0;
+            background: #0a0a0a;
+        }
+
+        .film-section.alt {
+            background: linear-gradient(180deg, #111 0%, #0a0a0a 100%);
+        }
+
+        .film-section-heading {
+            max-width: 680px;
+            margin-bottom: 3rem;
+        }
+
+        .film-section-heading .eyebrow {
+            color: var(--secondary-gold);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+        }
+
+        .film-section-heading h2 {
+            color: #fff;
+            font-size: clamp(2rem, 4vw, 3.4rem);
+            margin: 0.75rem 0 1rem;
+        }
+
+        .film-section-heading p,
+        .film-story {
+            color: rgba(255, 255, 255, 0.68);
+            line-height: 1.85;
+        }
+
+        .film-story {
+            font-size: 1.05rem;
+            max-width: 720px;
+        }
+
+        .credit-card {
+            height: 100%;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(212,175,55,0.08));
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            border-radius: 22px;
+            transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        .credit-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary-gold);
+            box-shadow: 0 20px 45px rgba(212, 175, 55, 0.18);
+        }
+
+        .credit-photo {
+            width: 145px;
+            height: 145px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 50%;
+            border: 4px solid var(--primary-gold);
+            padding: 5px;
+            background: #0a0a0a;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
+            margin-bottom: 1.25rem;
+        }
+
+        .credit-card h3 {
+            color: #fff;
+            font-size: 1.35rem;
+            margin-bottom: 0.35rem;
+        }
+
+        .credit-role {
+            color: var(--secondary-gold);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        .credit-card p {
+            color: rgba(255, 255, 255, 0.65);
+            line-height: 1.7;
+            margin: 1rem 0 0;
+        }
+
+        .detail-panel {
+            height: 100%;
+            padding: 2rem;
+            border-left: 2px solid var(--primary-gold);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .detail-panel h3 {
+            color: var(--secondary-gold);
+            font-size: 1rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .detail-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0 0;
+        }
+
+        .detail-list li {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.85rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .detail-list li strong {
+            color: #fff;
+            text-align: right;
+        }
+
+        @media (max-width: 991px) {
+            .film-hero {
+                padding-top: 130px;
+                background-position: 65% center;
+            }
+
+            .film-hero-copy {
+                margin-top: 3rem;
+                text-align: center;
+            }
+
+            .film-hero-copy .lead {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .film-meta {
+                justify-content: center;
+            }
+
+            .film-kicker {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .film-hero {
+                min-height: auto;
+                padding: 110px 0 70px;
+            }
+
+            .film-poster-wrap {
+                max-width: 285px;
+            }
+
+            .film-hero-copy h1 {
+                font-size: 3.8rem;
+            }
+
+            .film-section {
+                padding: 65px 0;
+            }
+
+            .credit-photo {
+                width: 120px;
+                height: 120px;
+            }
+
+            .detail-list li {
+                display: block;
+            }
+
+            .detail-list li strong {
+                display: block;
+                text-align: left;
+                margin-top: 0.25rem;
+            }
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
+            .hero-header {
+                min-height: 70vh;
+                padding: 100px 20px 50px;
+            }
+
+            .movie-title {
+                font-size: 2.5rem;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+
+            .movie-subtitle {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .release-date {
+                font-size: 0.9rem;
+                padding: 0.8rem 1.5rem;
+            }
+
+            .scroll-indicator {
+                bottom: 20px;
+            }
+
+            .mouse {
+                width: 20px;
+                height: 32px;
+            }
+
+            .social-links-hero {
+                margin-top: 1.5rem;
+            }
+
+            .facebook-link {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .facebook-link i {
+                font-size: 1.1rem;
+            }
+
+            .section-custom {
+                padding: 3rem 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .gold-card {
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .gold-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .gold-card ul li {
+                font-size: 0.9rem;
+                padding: 0.6rem 0;
+            }
+
+            /* Override Bootstrap grid for 2-per-row layout */
+            .row .col-lg-4,
+            .row .col-md-6,
+            .row .col-sm-6 {
+                width: calc(50% - 15px) !important;
+                display: inline-block !important;
+                vertical-align: top !important;
+                margin: 0 7.5px 15px 7.5px !important;
+                float: none !important;
+            }
+
+            /* Keep additional info sections full width */
+            .row .col-lg-4:not(.mb-4),
+            .row .col-md-6:not(.mb-4) {
+                width: 100% !important;
+                margin: 0 0 1.5rem 0 !important;
+            }
+
+            .cast-member {
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+                width: 100% !important;
+            }
+
+            .cast-member:hover {
+                transform: translateY(-8px);
+            }
+
+            .cast-photo {
+                width: 80px;
+                height: 80px;
+            }
+
+            .cast-member h5 {
+                font-size: 1rem;
+            }
+
+            .cast-member small {
+                font-size: 0.8rem;
+            }
+
+            .media-item-custom {
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+                width: 100% !important;
+            }
+
+            .media-item-custom:hover {
+                transform: translateY(-8px);
+            }
+
+            .media-item-custom i {
+                font-size: 2.5rem;
+            }
+
+            .media-item-custom h5 {
+                font-size: 1rem;
+            }
+
+            .media-item-custom p {
+                font-size: 0.8rem;
+            }
+
+            .info-box {
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .info-box h4 {
+                font-size: 1.1rem;
+            }
+
+            .info-box ul li {
+                font-size: 0.9rem;
+                padding: 0.6rem 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-header {
+                min-height: 60vh;
+                padding: 80px 15px 40px;
+            }
+
+            .movie-title {
+                font-size: 2rem;
+            }
+
+            .movie-subtitle {
+                font-size: 0.9rem;
+            }
+
+            .release-date {
+                font-size: 0.8rem;
+                padding: 0.6rem 1.2rem;
+            }
+
+            .section-custom {
+                padding: 2rem 0;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .gold-card {
+                padding: 1rem;
+            }
+
+            /* Override Bootstrap grid for 2-per-row layout on small mobile */
+            .row .col-lg-4,
+            .row .col-md-6,
+            .row .col-sm-6,
+            .row .col-lg-3,
+            .row .col-md-4 {
+                width: calc(50% - 10px) !important;
+                display: inline-block !important;
+                vertical-align: top !important;
+                margin: 0 5px 10px 5px !important;
+                float: none !important;
+            }
+
+            /* Keep additional info sections full width */
+            .row .col-lg-4:not(.mb-4),
+            .row .col-md-6:not(.mb-4),
+            .row .col-lg-3:not(.mb-4),
+            .row .col-md-4:not(.mb-4) {
+                width: 100% !important;
+                margin: 0 0 1rem 0 !important;
+            }
+
+            .cast-member {
+                padding: 1rem;
+                width: 100% !important;
+            }
+
+            .cast-photo {
+                width: 70px;
+                height: 70px;
+            }
+
+            .media-item-custom {
+                padding: 1rem;
+                width: 100% !important;
+            }
+
+            .media-item-custom i {
+                font-size: 2rem;
+            }
+
+            .info-box {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        /* Tablet Responsive Styles */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .movie-title {
+                font-size: 3.5rem;
+            }
+
+            .section-custom {
+                padding: 4rem 0;
+            }
+
+            .gold-card {
+                padding: 1.8rem;
+            }
+
+            .cast-member {
+                padding: 1.8rem;
+            }
+
+            .cast-photo {
+                width: 100px;
+                height: 100px;
+            }
+
+            .media-item-custom {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets\img\movie logo.png" alt="" style="height: 120px; width: auto" />
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li class="dropdown">
+            <a href="#"><span>Portfolio</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="index.html#portfolio">Films & Projects</a></li>
+              <li><a href="Behind_the_scenes.html">Behind the scenes</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="index.html#testimonials">Testimonials</a></li>
+              <li><a href="index.html#team">Team</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#"><span>News & Updates</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="index.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+          <li><a href="rental.html">Rental</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="one-film-main">
+    <section class="film-hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="film-poster-wrap">
+              <img class="film-poster" src="assets/img/One/ONE_TITLE POSTER_FINAL.jpg.jpeg"
+                alt="One film poster" />
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="150">
+            <div class="film-hero-copy">
+              <div class="film-kicker">A Rijal &amp; Rijal Production</div>
+              <h1><span>Coming soon</span>One</h1>
+              <p class="lead">
+                A cinematic story shaped by human connection, difficult choices, and the quiet courage
+                it takes to begin again. Discover the world of <em>One</em>, an upcoming feature film
+                from a passionate Nepali production house.
+              </p>
+              <div class="film-meta">
+                <span><i class="bi bi-film"></i> Feature Film</span>
+                <span><i class="bi bi-geo-alt"></i> Nepali Cinema</span>
+                <span><i class="bi bi-stars"></i> In Production</span>
+              </div>
+              <a href="#film-credits" class="btn btn-warning rounded-pill px-4 py-3 fw-semibold">
+                Meet the creative team <i class="bi bi-arrow-down ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="film-section" id="film-credits">
+      <div class="container">
+        <div class="film-section-heading" data-aos="fade-up">
+          <div class="eyebrow">The people behind the frame</div>
+          <h2>A story led by a clear creative vision.</h2>
+          <p>
+            Every scene begins with people who care about the story. Meet the producer and director
+            guiding <em>One</em> from the first idea to the final frame.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="credit-card">
+              <img class="credit-photo" src="assets/img/team/laxman.jpg" alt="Laxman Rijal" />
+              <h3>Laxman Rijal</h3>
+              <div class="credit-role">Producer</div>
+              <p>Building the production with purpose, care, and a commitment to meaningful cinema.</p>
+            </article>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article class="credit-card">
+              <img class="credit-photo" src="assets/img/sub_director.jpg" alt="Yuvraj Waiba" />
+              <h3>Yuvraj Waiba</h3>
+              <div class="credit-role">Director</div>
+              <p>Shaping the film’s visual language and bringing its emotional world to the screen.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="film-section alt">
+      <div class="container">
+        <div class="row g-5 align-items-stretch">
+          <div class="col-lg-7" data-aos="fade-up">
+            <div class="film-section-heading mb-0">
+              <div class="eyebrow">About the film</div>
+              <h2>More than a title. A shared experience.</h2>
+              <p class="film-story">
+                <em>One</em> is being created as a film that brings audiences closer to the feelings
+                behind the story. From its atmosphere and performances to the smallest production
+                detail, the team is focused on creating an honest, immersive experience for the big
+                screen.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="150">
+            <div class="detail-panel">
+              <h3>Production notes</h3>
+              <ul class="detail-list">
+                <li><span>Production house</span><strong>Rijal &amp; Rijal</strong></li>
+                <li><span>Format</span><strong>Feature film</strong></li>
+                <li><span>Status</span><strong>Coming soon</strong></li>
+                <li><span>Producer</span><strong>Laxman Rijal</strong></li>
+                <li><span>Director</span><strong>Yuvraj Waiba</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer dark-background">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <img src="assets/img/movie logo.png" alt="" style="height: 120px; width: auto" />
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>
+                            Rijal & Rijal Production is a leading film production company
+                            dedicated to creating cinematic masterpieces that resonate with
+                            audiences worldwide.
+                        </p>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="https://wa.me/+420774389763" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/rijalandrijalproduction" target="_blank"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Production</h4>
+                    <ul>
+                        <li><a href="about.html">About Studio</a></li>
+                        <li><a href="index.html#portfolio">Latest Projects</a></li>
+                        <li><a href="press-news.html">Press & News</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>More Links</h4>
+                    <ul>
+                        <li><a href="rental.html">Equipments Rental</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
+                    <h4>Contact Us</h4>
+                    <p>Email: rijalandrijalproduction@gmail.com</p>
+                    <p>Phone: +977-9841390861</p>
+                    <p>
+                        Address: Manamaiju-1<br />
+                        Kathmandu, Nepal
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>
+                &copy; 2025 All rights by Rijal & Rijal. Developed by
+                <a href="https://bechchha.com/" target="_blank">BechchhaTech</a>.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Initialize GLightbox
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+
+        // Smooth scroll for any anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -79,6 +79,13 @@
     height: auto;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #popup-content a:hover img {
+    transform: scale(1.015);
+    box-shadow: 0 14px 38px rgba(212, 175, 55, 0.35);
   }
 
   #close-btn {
@@ -106,7 +113,9 @@
 
 <div id="popup">
   <div id="popup-content">
-    <img src="assets/img/One/ONE_TITLE POSTER_FINAL.jpg.jpeg" alt="Popup Image">
+    <a href="one_flim.html" aria-label="View details for One film">
+      <img src="assets/img/One/ONE_TITLE POSTER_FINAL.jpg.jpeg" alt="One film poster">
+    </a>
     <button id="close-btn" >&times;</button>
   </div>
 </div>
@@ -711,8 +720,9 @@
             </div>
             <!-- End Portfolio Item -->
 
-            <!-- Upcoming Movie - Kaji -->
+            <!-- Upcoming Movie - One -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-upcoming">
+              <a href="one_flim.html" class="portfolio-link">
                 <div class="portfolio-card">
                   <div class="portfolio-img">
                     <img src="assets/img/One/ONE_TITLE POSTER_FINAL.jpg.jpeg" class="img-fluid" alt="One" />
