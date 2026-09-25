@@ -45,15 +45,6 @@
   <link href="assets/css/main.css" rel="stylesheet" />
 </head>
 
-<div id="popup">
-  <a href="kaji-details.html" id="popup-link" style="text-decoration: none; color: inherit;">
-    <div id="popup-content">
-      <img src="assets/img/kaji/1.jpg" alt="Kaji Movie Popup">
-      <button id="close-btn">&times;</button>
-    </div>
-  </a>
-</div>
-
 <style>
   #popup {
     position: fixed;
@@ -112,6 +103,13 @@
     background: #cc0000;
   }
 </style>
+
+<div id="popup">
+  <div id="popup-content">
+    <img src="assets/img/One/ONE_TITLE POSTER_FINAL.jpg.jpeg" alt="Popup Image">
+    <button id="close-btn" >&times;</button>
+  </div>
+</div>
 
 
 <body class="index-page">
@@ -696,28 +694,35 @@
             </div>
             <!-- End Portfolio Item -->
 
-            <!-- Upcoming Movie - Kaji -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-upcoming">
-              <a href="kaji-details.html" class="portfolio-link">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Drama">
+              <a href="" class="portfolio-link">
                 <div class="portfolio-card">
                   <div class="portfolio-img">
                     <img src="assets/img/kaji/1.jpg" class="img-fluid" alt="Kaji" />
+                    <div class="portfolio-overlay">
+                      <div class="overlay-content">
+                        <h4>Kaji</h4>
+                        <p>Nepali Love Story Between Kaji and Kajini, a sweet romantic flim</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <!-- Upcoming Movie - Kaji -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-upcoming">
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <img src="assets/img/One/ONE_TITLE POSTER_FINAL.jpg.jpeg" class="img-fluid" alt="One" />
                     <div class="portfolio-overlay kaji-overlay">
                       <div class="overlay-content">
                         <div class="kaji-badge">
                           <i class="bi bi-star-fill"></i>
                           <span>COMING SOON</span>
                         </div>
-                        <h4>Kaji "काजी"</h4>
-                        <p class="tagline">Full-Length Featured Film</p>
-                        <div class="release-info">
-                          <i class="bi bi-calendar-event"></i>
-                          <span>२७ चैत्र २०८२</span>
-                        </div>
-                        <div class="action-hint">
-                          <i class="bi bi-arrow-right-circle"></i>
-                          <span>Click for Details</span>
-                        </div>
+                        <h4>One</h4>
                       </div>
                     </div>
                   </div>
@@ -1523,7 +1528,7 @@
 
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
                 <img src="assets/img/ceo.jpg" class="img-fluid" alt="Ram Prasad Rijal" />
@@ -1546,7 +1551,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div class="member-img">
                 <img src="assets/img/team/laxman.jpg" class="img-fluid" alt="Laxman Rijal" />
@@ -1569,7 +1574,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
                 <img src="assets/img/team/ashim.jpg" class="img-fluid" alt="Ashim Kafle" />
@@ -1592,110 +1597,30 @@
               </div>
             </div>
           </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/sub_director.jpg" class="img-fluid" alt=""/>
+                <div class="social">
+                  <a href="" target="_blank"><i
+                      class="bi bi-facebook"></i></a>
+                  <a href="" target="_blank"><i
+                      class="bi bi-instagram"></i></a>
+                  <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>RONALD SHRESTHA </h4>
+                <span>Creative Director </span>
+                <p>
+                  Creative Director specializing in brand strategy, visual storytelling, and leading multidisciplinary teams across digital and print media.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <style>
-        .team-member {
-          background: #fff;
-          border-radius: 15px;
-          overflow: hidden;
-          box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-          transition: all 0.3s ease;
-          height: 100%;
-        }
-
-        .team-member:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        .member-img {
-          position: relative;
-          overflow: hidden;
-          aspect-ratio: 0.75 / 1;
-        }
-
-        .member-img img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: transform 0.5s ease;
-        }
-
-        .team-member:hover .member-img img {
-          transform: scale(1.1);
-        }
-
-        .social {
-          position: absolute;
-          bottom: -50px;
-          left: 0;
-          right: 0;
-          background: rgba(0, 0, 0, 0.7);
-          padding: 15px;
-          display: flex;
-          justify-content: center;
-          gap: 15px;
-          transition: bottom 0.3s ease;
-        }
-
-        .team-member:hover .social {
-          bottom: 0;
-        }
-
-        .social a {
-          color: #fff;
-          font-size: 18px;
-          transition: all 0.3s ease;
-        }
-
-        .social a:hover {
-          color: #0d6efd;
-          transform: translateY(-3px);
-        }
-
-        .member-info {
-          padding: 25px;
-          text-align: center;
-        }
-
-        .member-info h4 {
-          font-size: 20px;
-          font-weight: 700;
-          margin-bottom: 5px;
-          color: #1a1a1a;
-        }
-
-        .member-info span {
-          display: block;
-          font-size: 14px;
-          color: #0d6efd;
-          margin-bottom: 15px;
-          font-weight: 500;
-        }
-
-        .member-info p {
-          font-size: 14px;
-          color: #666;
-          line-height: 1.6;
-          margin: 0;
-        }
-
-        @media (max-width: 768px) {
-          .team-member {
-            margin-bottom: 30px;
-          }
-
-          .member-info {
-            padding: 20px;
-          }
-
-          .member-info h4 {
-            font-size: 18px;
-          }
-        }
-      </style>
     </section>
 
     <!-- /Team Section -->
